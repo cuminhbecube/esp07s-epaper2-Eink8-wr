@@ -20,16 +20,21 @@ A smart information display firmware for ESP8266 interacting with a 7.5-inch E-I
 
 ## 🛠 Hardware Wiring
 
-| ESP8266 Pin | E-Paper Pin | Description      |
-| :---        | :---        | :---             |
-| GPIO 13     | DIN      11 | SPI MOSI         |
-| GPIO 14     | CLK      12 | SPI SCK          |
-| GPIO 15     | CS       13 | Chip Select      |
-| GPIO 4      | DC       14 | Data/Command     |
-| GPIO 5      | RST      15 | Reset            |
-| GPIO 12     | BUSY     16 | Busy Signal      |
-| 3.3V        | VCC         | Power (3.3V)     |
-| GND         | GND         | Ground           |
+| ESP8266 Pin    | E-Paper Pin       | Description      |
+| :---           | :---              | :---             |
+| GPIO 13        | DIN            11 | SPI MOSI         |
+| GPIO 14        | CLK            12 | SPI SCK          |
+| GPIO 15        | CS             13 | Chip Select      |
+| GPIO 4         | DC             14 | Data/Command     |
+| GPIO 5         | RST            15 | Reset            |
+| GPIO 12        | BUSY           16 | Busy Signal      |
+| 3.3V           | VCC          9,10 | Power (3.3V)     |
+| GND            | GND            8  | Ground           |
+| GND (filter)   | GND  1,2,3,4,5,6,7| GND (filter)     |
+| GND (filter)   | GND       20,21,22| GND (filter)     |
+| GND (LC filter)| GND            17 | GND (LC filter)  |
+| GND (via Q3)   | GND            22 | GND (via Q3)     |
+
 
 **Note**: GPIO 2 (Switch) connects to GND when pressed.
 
@@ -78,4 +83,5 @@ const char* FIRMWARE_URL = "..."; // URL for OTA .bin file
 
 ## 📝 License
 This project is open source.
+
 
