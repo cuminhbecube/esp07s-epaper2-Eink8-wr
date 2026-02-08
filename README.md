@@ -22,13 +22,12 @@ A smart information display firmware for ESP8266 interacting with a 7.5-inch E-I
 
 | ESP8266 Pin | E-Paper Pin | Description      |
 | :---        | :---        | :---             |
-| GPIO 13     | DIN         | SPI MOSI         |
-| GPIO 14     | CLK         | SPI SCK          |
-| GPIO 15     | CS          | Chip Select      |
-| GPIO 4      | DC          | Data/Command     |
-| GPIO 5      | RST         | Reset            |
-| GPIO 12     | BUSY        | Busy Signal      |
-| GPIO 2      | BUTTON      | Smart Switch     |
+| GPIO 13     | DIN      11 | SPI MOSI         |
+| GPIO 14     | CLK      12 | SPI SCK          |
+| GPIO 15     | CS       13 | Chip Select      |
+| GPIO 4      | DC       14 | Data/Command     |
+| GPIO 5      | RST      15 | Reset            |
+| GPIO 12     | BUSY     16 | Busy Signal      |
 | 3.3V        | VCC         | Power (3.3V)     |
 | GND         | GND         | Ground           |
 
@@ -79,3 +78,4 @@ const char* FIRMWARE_URL = "..."; // URL for OTA .bin file
 
 ## 📝 License
 This project is open source.
+
